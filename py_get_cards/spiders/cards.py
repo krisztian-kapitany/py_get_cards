@@ -22,6 +22,6 @@ class CardsSpider(scrapy.Spider):
                 'type': detailtexts[5].strip(),
                 'rarity': detailtexts[8].strip(),
                 'deck': detailtexts[2].strip(),
-                'cardText': detailtexts[10].strip(),
+                'cardText': "".join(detailtexts[10:len(detailtexts)]).strip(),
                 'imgUrl': card.css('img.card-art ::attr(data-original)').extract_first()
                 }
