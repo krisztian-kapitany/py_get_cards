@@ -12,6 +12,7 @@ class CardsSpider(scrapy.Spider):
         'https://d3go.com/mtgpq-card-list-shadows-over-innistrad/',
         'https://d3go.com/mtgpq-card-list-eldritch-moon/',
         'https://d3go.com/mtgpq-card-list-kaladesh/',
+        'https://d3go.com/mtgpq-card-list-aether-revolt/',
     )
 
     def parse(self, response):
